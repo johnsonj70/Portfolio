@@ -74,6 +74,10 @@ p   {
     padding: 120px 60px;
 }
 
+#row-spacing {
+    row-gap: 20px;
+}
+
 @media (max-width: 900px) {
     .project-description {
         padding: 0;
