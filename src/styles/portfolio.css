@@ -81,6 +81,41 @@ p   {
     line-height: 2;
 }
 
+.logo {
+    max-height: 41px;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 43px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+}
+
+nav a:hover {
+    transition: all 100ms ease-in-out;
+}
+
 .btn-branding {
     background: var(--secondary-color);
     color: white;
@@ -92,6 +127,12 @@ p   {
     border-radius: 4px;
 }
 
+.btn-branding:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--branding-color);
+    color: var(--secondary-color);
+}
+
 .btn-branding-outline {
     color: var(--secondary-color);
     font-size: 18px;
@@ -99,6 +140,12 @@ p   {
     padding: 15px 30px;
     border-radius: 4px;
     border: 1px solid var(--secondary-color);
+}
+
+.btn-branding-outline:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--branding-color);
 }
 
 .project-description {
