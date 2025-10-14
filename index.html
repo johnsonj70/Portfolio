@@ -1,113 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Front-end Developer - Janice Johnson</title>
+    <title>Front-end Developer and DevSecOps Consultant - Janice Johnson</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Janice is a front-end developer based in London, specialising in HTML, CSS, Javascript, Python, and React development.">
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/portfolio.css">
-    
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/@nicesapien0/typewriter.js/typewriter.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3c14ebce4b.js" crossorigin="anonymous"></script>
     
 </head>
 
 <body>
-<div class="container">
-    <nav class="d-flex justify-content-between">
-    <a href="https://www.shecodes.io" target="_blank" alt="_blank" title="Shecodes Homepage">
-      <img src="/src/images/logo.png" class="logo d-none d-md-block" alt="Shecodes log" />
-      <img src="/src/images/logo-small.jpg" class="logo d-block d-md-none" alt="Shecodes logo small" />
-    </a>
-      <ul>
-        <li class="active">
-            <a href="/" title="Homepage">Home</a>
-        </li>
-        <li>
-            <a href="/about.html" title="About Janice">About</a>
-        </li>
-        <li>
-            <a href="/work.html" title="Janice's Work">Work</a>
-        </li>
-        <li>
-            <a href="/contact.html" title="Contact Janice">Contact</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Janice Johnson</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="active" aria-current="home" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="opacity: 0.5" href="about.html" title="About Janice Johnson">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="opacity: 0.5" href="projects.html" title="Janice's Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="opacity: 0.5" href="skills.html" title="Janice's Skillset">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="opacity: 0.5" href="about.html" title="Contact Janice Johnson">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+      </div>
     </nav>
-</div>
+
     <div class="hero">
-        <p>👋🏾 Hello, I am</p>
-        <h1>Janice Johnson</h1>
-        <h2>Front-end Developer, based in London</h>
-        <div class="mt-5">
-            <a href="/contact.html" class="btn btn-branding" title="Contact Janice">Contact Me</a>
+        <div class="container code-quote mt-100">
+            <img src="./src/images/eat-sleep-code-repeat.png" class="img-fluid">
         </div>
-   </div>
-   <p class="text-center mb-5">These Projects feature my work to date, and I share them with you to enjoy.</p>
-   <div class="container">
-    <div class="row">
-        <div class="col d-none d-lg-block">
-            <img src="src/images/yogurt.png" class="img-fluid" alt="Yogurt Project preview"/>
-        </div>
-        <div class="col">
-            <div class="project-description">
-                <h2 class="mb-5">Yogurt Project</h2>
-                <p class="mb-5 text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by</p>
-                <a href="/work.html" class="btn btn-branding-outline">Learn More</a>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-5">
-         <div class="col">
-            <div class="project-description">
-                <h2 class="mb-5">Weather Project</h2>
-                <p class="mb-5 text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by</p>
-            </div>
-        </div>
-        <div class="col d-none d-lg-block">
-            <img src="src/images/weather.png" class="img-fluid" alt="Weather Project preview"/>
-        </div>
-    </div>
-    <div class="row mt-3 mb-5">
-        <div class="col d-none d-lg-block">
-            <img src="src/images/dictionary.png" class="img-fluid" alt="Dictionary Project preview">
-        </div>
-        <div class="col">
-            <div class="project-description">
-                <h2 class="mb-4">Dictionary Project</h2>
-                <p class="mb-5 text-muted">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by</p>
-                <a href="/work.html" class="btn btn-branding-outline">Learn More</a>
-            </div>
-        </div>
-    </div>
-    <footer class="container">
-    <div class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex">
-        <div>
-            <h3>Work Inquiry</h3>
-            <p>Let's work together!</p>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
+        <div class="intro">
+            <p class="text-center">The informaton security experience that I have empowers me to build secure, fully responsive websites using the latest technologies and following industry best practices. You can view a small a selection of my recently completed projects on my projects page.</p>
         </div>
             <div>
-                <a href="/contact.html" class="btn btn-branding">Contact Me</a>
+                <a href="/projects.html" class="btn btn-branding home-projects-button" title="Link to Projects">View Projects</a>
             </div>
-        </div>
-        <div class="d-flex justify-content-center mb-5">
-            <a href="mailto:johnson.janice30@yahoo.co.uk" class="email-link" title="Email Janice">johnson.janice30@yahoo.co.uk</a>
-        </div>
-        <div class="social-links d-flex justify-content-center">
-            <a href="https://github.com/johnsonj70" target="_blank"><i class="fa-brands fa-github" title="GitHub Profile"></i></a>
-            <a href="https://linkedin.com/in/janice-johnson-msc" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn Profile"></i></a>
-            <a href="https://www.instagram.com/eagleeyedgirl" target="_blank"><i class="fa-brands fa-instagram" title="Instagram Profile"></i></a>
-    </footer>
-        <p class="credits text-center mt-5">
-            👌🏾These projects were coded by SheCodes and they are <a href="https://github.com/johnsonj70/Portfolio" title="GitHub Porfolio Project homepage" target="_blank">open-sourced</a>
+   </div>
+    <footer class="container">
+        <div class="container icons d-flex">
+            <p class="fa-stack fa-2x center" style="font-size: 3em; color: #F5F5F5">
+                <a href="https://github.com/johnsonj70" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x" title="GitHub Profile"></i>
+                    <i class="fa-brands fa-github fa-stack-1x icon"></i>
+                </a>                     
             </p>
-        </div>  
+            <br />
+            <p class="fa-stack fa-2x center" style="font-size: 3em; color: #F5F5F5">
+                <a href="https://linkedin.com/in/janice-johnson-msc" target="_blank">
+                    <i class="fa fa-circle fa-stack-2x" title="LinkedIn Profile"></i>
+                    <i class="fa-brands fa-linkedin fa-stack-1x icon"></i>
+                </a>                      
+            </p>
+            <br />
+            <p class="fa-stack fa-2x center" style="font-size: 3em; color: #F5F5F5">
+                <a href="mailto:johnson.janice30@yahoo.co.uk" title="Email Janice">
+                    <i class="fa fa-circle fa-stack-2x" title="LinkedIn Profile"></i>
+                    <i class="fa-solid fa-envelope fa-stack-1x icon"></i>
+                </a>   
+            </p>
+            <br />
+        </div>
+         <p class="credits text-center">
+            This project is <a href="https://github.com/johnsonj70/Portfolio" title="GitHub Porfolio Project homepage" target="_blank">open-sourced</a>, and hosted on 
+            <a href="https://janice-johnson-portfolio.netlify.app/" title="Portfolio Project homepage" target="_blank">Netlify</a>
+        </p>
+    </footer>
 </div>
+    <script src="./index.js"></script>
+    
 </body>
 </html>
