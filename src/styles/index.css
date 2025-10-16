@@ -7,8 +7,12 @@
 
 body {
     font-family: var(--default-font-family);
-    background-color: var( --branding-color);
+    background-color: var(--branding-color);
+}
 
+.navbar {
+    background-color: var(--branding-color);
+    margin-top: 0;
 }
 
 span {
@@ -123,7 +127,7 @@ p {
 .intro p {
     color: var(--tertiary-color);
     font-family: var(--default-font-family);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 nav {
@@ -146,6 +150,10 @@ nav li {
     color: var(--tertiary-color);
     font-size: 24px;
     margin-left: 20px;
+}
+
+.navbar-brand:hover {
+    color: #000080;
 }
 
 .navbar-toggler {
@@ -172,9 +180,9 @@ nav li.active a {
     color:#000080;
 }
 
-
 .icons {
-    margin-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 20px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +191,6 @@ nav li.active a {
 }
 
 footer .credits {
-    margin-top: 20px;
     font-size: 14px;
     color: var(--tertiary-color);
 }
