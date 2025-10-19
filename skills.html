@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/projects.css">
+    <link rel="stylesheet" href="src/styles/skills.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
@@ -19,41 +19,178 @@
     <script src="https://kit.fontawesome.com/3c14ebce4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-  <nav class="navbar navbar-expand-lg sticky-top"> 
-        <a class="navbar-brand" href="index.html">Janice Johnson</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="index.html" title="Homepage">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="about.html" title="About Janice Johnson">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="projects.html" title="Janice's projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="active" aria-current="skills" href="/skills.html">Skills</a>
-                    
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="contact.html" title="Contact Janice Johnson">Contact Me</a>
-                </li>
-            </ul>
+    <section class="top-nav">
+      <div class="branding">
+        Logo Here
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a id="inactive" style="opacity: 0.5" href="index.html" title="Homepage">Home</a></li>
+          <li><a id="inactive" style="opacity: 0.5" href="about.html" title="About Janice Johnson">About</a>
+          <li><a id="inactive" style="opacity: 0.5" href="projects.html" title="Janice's project portfolio">Projects</a></li>
+          <li><a id="active" href="/skills.html" title="Janice's skillset">Skills</a></li>
+          <li><a id="inactive" style="opacity: 0.5" href="contact.html" title="Contact Janice Johnson">Contact Me</a></li>
+        </ul>
+      </section>
+  
+<div class="content">
+    <h1 class="mb-5" id="h1"></h1>
+        <p id="intro">I used the following frameworks and technologies to create the projects highlighted on my <a href="projects.html">projects</a> page.
+        The projects illustrate the progression made from working with pure HTML, to Vanilla Javascript and finally responsive design.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/HTML5.png" class="img-fluid" title="HTML logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>HTML</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/CSS.png" class="img-fluid" title="CSS logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>CSS</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/javascript.png" class="img-fluid" title="Javascript logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Javascript</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/java.png" class="img-fluid" title="Java logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Java</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/python.png" class="img-fluid" title="Python logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Python</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/vscode.png" class="img-fluid" title="VSCode logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>VSCode</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/github.png" class="img-fluid github" title="Github logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>GitHub</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/hosting.png" class="img-fluid" title="Hosting logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Hosting</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/bootstrap.png" class="img-fluid" title="Bootstrap logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Bootstrap</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/responsive.png" class="img-fluid" title="Responsive logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Responsive</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/AI.png" class="img-fluid" title="AI logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>AI</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-body">
+                                <img src="src/images/react.png" class="img-fluid" title="React logo"/>
+                            </div>
+                            <div class="card-footer">
+                                <h6>React</h6>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
         </div>
-</nav> 
-<div class="content-container container">
-    <div class="content">
-        <h1 class="mb-5">Skills and Experience</h1>
-        
-            <h2 id="intro">A small selection of recently completed projects that showcase the various frameworks and technologies used.</h2>
-       
     </div>
-</div>
   <footer class="container">
         <div class="container icons d-flex">
             <p class="fa-stack fa-2x center" style="font-size: 3em; color: #F5F5F5">
@@ -83,5 +220,6 @@
             <a href="https://janice-johnson-portfolio.netlify.app/" title="Portfolio Project homepage" target="_blank">Netlify</a>
         </p>
     </footer>
+        <script src="./skills.js"></script>
 </body>
 </html>

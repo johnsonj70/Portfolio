@@ -19,52 +19,38 @@
     <script src="https://kit.fontawesome.com/3c14ebce4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-lg sticky-top">    
-        <a class="navbar-brand" href="index.html">Janice Johnson</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="index.html" title="Homepage">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="active" aria-current="about" href="about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="projects.html" title="Janice's Projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="skills.html" title="Janice's Skillset">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="opacity: 0.5" href="contact.html" title="Contact Janice Johnson">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+    <section class="top-nav">
+      <div class="branding">
+        Logo Here
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a id="inactive" style="opacity: 0.5" href="index.html" title="Homepage">Home</a></li>
+          <li><a id="active" href="/about.html" title="About Janice Johnson">About</a></li>
+          <li><a id="inactive" style="opacity: 0.5" href="projects.html" title="Janice's project portfolio">Projects</a>
+          <li><a id="inactive" style="opacity: 0.5" href="skills.html" title="Janice's Skillset">Skills</a></li>
+          <li><a id="inactive" style="opacity: 0.5" href="contact.html" title="Contact Janice Johnson">Contact Me</a></li>
+        </ul>
+      </section>
     <div class="content-container container">
-        <h1 class="center">Welcome</h1>
-        <h2 id="h2">My Coding Journey</h2>
+        <h1 id="h1"></h1>
+        <h2 id="h2"></h2>
         <br />
         <div class="row">
             <div class="col-lg-6">
                 <div class="content-content">
                     <p class="coding-journey">
                         I would definitely recommend the <a href="https://www.shecodes.io/" class="shecodes-link" target="_blank">
-                        SheCodes Online Coding Workshops</a> to women who wish start their coding journey.
-                        You will be challenged with different exercises and projects, but the concepts 
-                        are thoroughly explained and a solution is provided for every exercise. The homework
-                        and deadlines are designed to test your knowledge and keep you focused. All in all, the
-                        workshops really helped me to put what I had learned into practice, whilst introducing
-                        me to new concepts.
-                     </p>
-                    <p class="coding-journey">
-                        My goal now is to work on real-world coding projects to expand my career opportunities
-                        and continue to grow as a Front-end Developer.<br />
+                        SheCodes Online Coding Workshops</a> to women who wish start their coding journey. Make no mistake you will be
+                        challenged, but in a good way. The coding workshops introduced me to new concepts and really helped me to put
+                        what I had learned into practice.
+                    </p> 
+                     <p class="coding-journey">  
+                        My goal now is to continue to grow as a developer and complete real-world coding projects to expand my career
+                        opportunities.
                      </p>
                 </div>
             </div>
@@ -102,6 +88,6 @@
             <a href="https://janice-johnson-portfolio.netlify.app/" title="Portfolio Project homepage" target="_blank">Netlify</a>
         </p>
     </footer>
-</div>
+    <script src="./about.js"></script>
 </body>
 </html>
