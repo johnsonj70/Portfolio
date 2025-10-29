@@ -1,5 +1,5 @@
 :root {
-    --branding-color: #111111;
+    --branding-color: #131313;
     --secondary-color: #505050;
     --tertiary-color: #F5F5F5;
     --default-font-family: 'Poppins';
@@ -20,10 +20,9 @@ span {
 }
 
 .code-quote {
-    padding-top: 200px;
-    display: flex;
-    max-width: 600px;
-    max-height: 500px;
+    width: 700px;
+    padding-top: 100px;
+    margin-right: 0;
     margin: auto;
 }
 
@@ -32,18 +31,12 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--tertiary-color);
 }
 
-#h1 {
-     font-size: 66px;
-     line-height: 1;
-     margin-bottom: 0;
-}
-
 h2 {
     font-size: 40px;
 }
 
 #h2 {
-    font-size: 28px;
+    font-size: 46px;
 }
 
 h3 {
@@ -60,10 +53,11 @@ h5 {
     font-size: 20px;
 }
 
-.branding {
-    max-width: 260px;
+.branding  img {
+    max-width: 65px;
     margin-left: 0;
     text-align: left;
+    color: var(--branding-color);
 }
 
 .intro {
@@ -134,7 +128,7 @@ p {
 .btn-branding:hover {
     border: 1.5px solid var(--branding-color);
     background-color: var(--tertiary-color);
-    color: var(--branding-color);
+    color: var(--secondary-color);
 }
 
 .intro p {
@@ -156,8 +150,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #0f0d0d;
-  background: linear-gradient(nulldeg,rgba(15, 13, 13, 1) 11%, rgba(80, 80, 80, 1) 100%);
+  background: var(--branding-color);
   height: 50px;
   padding: 1em;
 }
@@ -178,6 +171,10 @@ p {
  .menu > li:last-child {
     margin-right: 35px;
   }
+
+small {
+  color: var(--tertiary-color);
+}
 
 li a {
   font-size: 17px;
@@ -204,7 +201,7 @@ li a {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: var(--tertiary-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -228,12 +225,16 @@ li a {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: var(--branding-color);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
+}
+
+ul {
+  background-color: var(--branding-color);
 }
 
 a {
@@ -257,7 +258,7 @@ a {
 }
 
 .branding:hover {
-    color: #000080;
+    color: var(--secondary-color);
 }
 
 .toggler {

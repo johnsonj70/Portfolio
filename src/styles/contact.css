@@ -53,6 +53,10 @@ li a {
   text-decoration: none;
 }
 
+small {
+  color: var(--tertiary-color);
+}
+
 .menu-button-container {
   display: none;
   height: 100%;
@@ -118,9 +122,16 @@ a {
 }
 
 .branding {
-    max-width: 260px;
+  max-width: 260px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.branding img {
+    max-width: 65px;
     margin-left: 0;
     text-align: left;
+    color: var(--branding-color);
 }
 
 .branding:hover {

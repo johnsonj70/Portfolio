@@ -1,16 +1,6 @@
 
-new TypeIt("#h1", {
-  strings: "Janice Johnson",
-  speed: 100, 
-  afterComplete: function (instance) {
-    instance.destroy();
-  }
-}).go();
-
-// Or!
-
 new TypeIt("#h2", {
-  strings: ["Junior Frontend Web Developer"],
+  strings: ["Junior Front-end Web Developer"],
   speed: 100, 
   afterComplete: function (instance) {
     instance.destroy();

@@ -43,9 +43,13 @@ body {
   overflow: hidden;
 }
 
- .menu > li:last-child {
+.menu > li:last-child {
     margin-right: 35px;
   }
+
+small {
+  color: var(--tertiary-color);
+}
 
 li a {
   font-size: 17px;
@@ -119,9 +123,16 @@ a {
 }
 
 .branding {
-    max-width: 260px;
+  max-width: 260px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.branding img {
+    max-width: 65px;
     margin-left: 0;
     text-align: left;
+    color: var(--branding-color);
 }
 
 .branding:hover {
