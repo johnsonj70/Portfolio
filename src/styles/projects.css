@@ -1,5 +1,5 @@
 :root {
-    --branding-color: #111111;
+    --branding-color: #131313;
     --secondary-color: #505050;
     --tertiary-color: #F5F5F5;
     --default-font-family: 'Poppins';
@@ -24,7 +24,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #0f0d0d;
+  background: var(--branding-color);
   background: linear-gradient(nulldeg,rgba(15, 13, 13, 1) 11%, rgba(80, 80, 80, 1) 100%);
   height: 50px;
   padding: 1em;
@@ -172,26 +172,13 @@ h1, h2, h3, h4, h5, h6 {
      margin-top: 150px
 }
 
-.content h1 {
-     font-size: 66px;
-     text-align: center;
-     line-height: 1;
-     margin-bottom: 0;
-     margin-top: 150px
-}
-
-.content p {
-  font-size: 14px;
-  color: var(--tertiary-color);
-}
-
 h2 {
     font-size: 40px;
     margin-bottom: 150px;
 }
 
 #h2 {
-    font-size: 28px;
+    font-size: 40px;
     color: var(--secondary-color);
     text-align: center;
 }
@@ -200,6 +187,7 @@ h3 {
     font-size: 36px;
     line-height: 1,5;
     margin: 20px 0 0;
+    font-weight: normal;
 }
 
 h4 {
@@ -210,11 +198,51 @@ h5 {
     font-size: 20px;
 }
 
+.content h1 {
+     font-size: 66px;
+     text-align: center;
+     line-height: 1;
+     margin-bottom: 0;
+     margin-top: 150px
+}
+
+.content .muted-text {
+  font-size: 16px;
+  font-weight: lighter;
+  color: var(--tertiary-color);
+}
+
 .coding-journey {
     margin: 0 auto 30px;
     text-align: center;
     font-size: 20px;
     color: var(--tertiary-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-gap: 20px;
+}
+
+.card {
+    background-color: var(--branding-color);
+    border-radius: 1px;
+    border-color: var(--tertiary-color);
+}
+
+.card-body {
+    background-color: var(--branding-color);
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+.card-footer {
+    background-color: var(--branding-color);
+    text-align: center;
+}
+
+.card-body .github {
+    background-color: white;
 }
 
 .shecodes-link {
@@ -226,25 +254,38 @@ h5 {
     margin-top: 8px;
 }
 
+hr {
+    line-height: 1em;
+    color: var(--tertiary-color);
+}
 p a {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
-p .icon {
-     color: var(--tertiary-color);
+.fa-github {
+  font-size: 3em;
 }
 
 .fa-github:hover {
-    color: var(--branding-color);
+    color: var(--secondary-color);
+}
+
+.fa-linkedin {
+  font-size: 3em;
 }
 
 .fa-linkedin:hover {
-    color: var(--branding-color);
+    color: var(--secondary-color);
+}
+
+.fa-envelope {
+    font-size: 3em;
 }
 
 .fa-envelope:hover {
-    color: var(--branding-color);
+  color: var(--secondary-color);
 }
+
 
 p {
     font-weight: 400;
@@ -252,25 +293,24 @@ p {
     text-align: center;
 }
 
-.btn-branding {
+.projects-button {
     background: var(--secondary-color);
     color:  var(--tertiary-color);
     font-family: var(--default-font-family);
     font-size: 20px;
-    text-align: center;
+    margin: 0 auto;
     line-height: 27px;
-    margin-top: 30px;
     padding: 15px 30px;
     border-radius: 10px;
 }
 
-.btn-branding:hover {
+.projects-button:hover {
     border: 1.5px solid var(--branding-color);
     background-color: var(--tertiary-color);
     color: var(--branding-color);
 }
 
-.btn.branding a {
+.projects-button a {
     text-decoration: none;
 }
 
@@ -282,8 +322,17 @@ p {
     font-size: 24px;
 }
 
-p .muted-text {
-    font-size: 10px;
+.intro {
+    padding-top: 50px;
+    margin-bottom: 70px;
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--default-font-family);
+    font-size: 40px;
+}
+
+.content .muted-text {
+    font-size: 12px;
     color: var(--tertiary-color)!important;
 }
 
@@ -310,68 +359,187 @@ footer .credits {
 
 .credits a {
     color: var(--tertiary-color);
+    font-size: 14px;
 }
 
 @media (max-width: 700px) {
 
-    .project-description {
-        padding: 0;
-        text-align: center;
-    }
-    h1 {
-        font-size: 44px;
-        line-height: 1.5;
-    }
+.branding img {
+    max-width: 45px;
+}
 
-    h2 {
-        font-size: 36px;
-    }
+.project-description {
+    padding: 0;
+    text-align: center;
+}
 
-    h3 {
-        font-size: 26px;
-    }
+#h1 {
+    font-size: 36px;
+    line-height: 1.5;
+}
 
-    .menu-button-container {
-        display: flex;
-    }
 
-    .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+#intro {
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
 
-    #menu-toggle ~ .menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+.intro {
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
 
-    #menu-toggle:checked ~ .menu li {
-        border: 1px solid #333;
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
+h3 {
+    font-size: 16px;
+}
 
-    .menu > li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: white;
-        background-color: #222;
-    }
+.menu-button-container {
+    display: flex;
+}
 
-    .menu > li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
+.menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+}
+
+.menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+}
+
+.projects-button {
+    max-width: 350px;
+    max-height: 50px;
+}
+
+.content a {
+   font-size: 14px;
+  padding-top: 10px; 
+}
+
+.grid-container {
+  grid-template-columns: repeat(2, 6fr);
+}
+
+.card-footer {
+    font-size: 8px;
+}
+
+p .muted-text {
+    font-size: 8px;
+}
+
+.fa-github {
+  font-size: 1.5em;
+}
+
+.fa-linkedin {
+  font-size: 1.5em;
+}
+
+.fa-envelope {
+  font-size: 1.5em;
+}
+
+footer .credits {
+    font-size: 11px;
+}
+
+.credits a {
+    color: var(--tertiary-color);
+    font-size: 11px;
+}
+}
+
+@media (min-width: 701px) and (max-width: 940px) {
+
+.branding img {
+    max-width: 50px;
+}
+
+#h1 {
+    font-size: 44px;
+    line-height: 1.5;
+}
+
+#intro {
+    padding-top: 40px;
+    font-size: 22px;
+}
+
+.intro {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+li a {
+    font-size: 13px;
+}
+
+.card-footer {
+    font-size: 8px;
+}
+
+.grid-container {
+    grid-template-columns: repeat(3, 4fr);
+}
+
+.fa-github {
+  font-size: 1.5em;
+}
+
+.fa-linkedin {
+  font-size: 1.5em;
+}
+
+.fa-envelope {
+  font-size: 1.5em;
+}
+
+.fa-github:hover {
+    color: var(--secondary-color);
+}
+
+.fa-linkedin:hover {
+    color: var(--secondary-color);
+}
+
+.fa-envelope:hover {
+    color: var(--secondary-color);
+}
 }

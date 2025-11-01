@@ -99,12 +99,28 @@ h5 {
     margin-top: 8px;
 }
 
-p a {
+.fa-github {
+  font-size: 3em;
+}
+
+.fa-github:hover {
     color: var(--secondary-color);
 }
 
-p .icon {
-     color: var(--tertiary-color);
+.fa-linkedin {
+  font-size: 3em;
+}
+
+.fa-linkedin:hover {
+    color: var(--secondary-color);
+}
+
+.fa-envelope {
+    font-size: 3em;
+}
+
+.fa-envelope:hover {
+  color: var(--secondary-color);
 }
 
 p {
@@ -169,9 +185,9 @@ p {
   overflow: hidden;
 }
 
- .menu > li:last-child {
+.menu > li:last-child {
     margin-right: 35px;
-  }
+}
 
 li a {
   font-size: 17px;
@@ -268,24 +284,11 @@ a {
 
 .icons {
     padding-top: 200px;
-    padding-bottom: 20px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
-
-.fa-github:hover {
-    color: var(--branding-color);
-}
-
-.fa-linkedin:hover {
-    color: var(--branding-color);
-}
-
-.fa-envelope:hover {
-    color: var(--branding-color);
 }
 
 footer .credits {
@@ -360,5 +363,53 @@ h3 {
 .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
 }
+
+#h1 {
+     font-size: 44px;
+     text-align: center;
+}
+
+#h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.coding-journey {
+    font-size: 14px;
+    text-align: center;
+}
+
+.profile-picture {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    max-height: 260px;
+}
+
+p .center {
+   padding-bottom: 0;
+}
+
+.col-lg-6 {
+    display: block;
+    align-items: center;
+}
+
+.fa-github {
+  font-size: 1.5em;
+}
+
+.fa-linkedin {
+  font-size: 1.5em;
+}
+
+.fa-envelope {
+  font-size: 1.5em;
+}
+
+footer .credits {
+    font-size: 11px;
+}
+
 }
 
