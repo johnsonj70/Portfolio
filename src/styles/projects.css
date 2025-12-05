@@ -28,6 +28,7 @@ body {
   background: linear-gradient(nulldeg,rgba(15, 13, 13, 1) 11%, rgba(80, 80, 80, 1) 100%);
   height: 50px;
   padding: 1em;
+  z-index: 9999;
 }
 
 .menu {
@@ -325,7 +326,7 @@ p {
 .intro {
     padding-top: 50px;
     margin-bottom: 70px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-align: center;
     font-family: var(--default-font-family);
     font-size: 40px;
@@ -454,7 +455,7 @@ h3 {
 }
 
 .card-footer {
-    font-size: 8px;
+    font-size: 10px;
 }
 
 p .muted-text {
@@ -516,7 +517,7 @@ li a {
 }
 
 .grid-container {
-    grid-template-columns: repeat(3, 4fr);
+    grid-template-columns: repeat(4, 3fr);
 }
 
 .fa-github {
